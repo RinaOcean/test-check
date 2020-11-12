@@ -2,8 +2,7 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+@import './utils/variables';
 
 // Стили для файла с примером HTML-фрагмента
-
-@import './utils/variables';
-@import './base/global-reset';
+@import './example';
