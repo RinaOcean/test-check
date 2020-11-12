@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    width: 100%;
+    padding: 30px 10px;
+    &-nav {
+        display: flex;
+    }
+    &-list {
+        display: flex;
+        padding: 10px 20px;
+        list-style: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    &-item {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+    &-button {
+        padding: 10px;
+        background-color: blue;
+        color: white;
+    }
+}
+
+.logo {
+    width: 128px;
+    height: 45px;
+}
