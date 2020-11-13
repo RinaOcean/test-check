@@ -2,9 +2,9 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import './components/offer';
 @import './utils/variables';
 @import './base/basic-reset';
+@import './components/offer';
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
