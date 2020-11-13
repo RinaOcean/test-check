@@ -2,8 +2,16 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+<<<<<<< Updated upstream
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
 @import './utils/variables';
 @import './base/global-reset';
+=======
+@import "./utils/variables";
+@import './base/basic-reset';
+
+// Стили для файла с примером HTML-фрагмента
+@import "./example";
+>>>>>>> Stashed changes
