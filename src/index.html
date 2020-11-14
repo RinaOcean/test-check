@@ -14,7 +14,19 @@
     />
 
     <title>Test check project</title>
-    <link rel="stylesheet" href="../css/main.min.css" />
+
+ </head>
+
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+
+    <include src="./partials/slider.html"></include>
+    <div>
+      <ul></ul>
+    </div>
+
+
+
   </head>
           
   <body>
@@ -23,7 +35,7 @@
      <include src="./partials/offer.html"> </include>
     
  <include src="./partials/footer.html"></include>
-    
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
