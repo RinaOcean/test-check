@@ -4,6 +4,9 @@
  */
 @import './utils/variables';
 @import './base/basic-reset';
+@import './layout/header';
+@import './layout/problems';
+@import './components/offer';
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
