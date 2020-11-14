@@ -1,0 +1,29 @@
+.section-program {
+  background-color: $bgn-dark-theme;
+
+  .title {
+    padding-bottom: 42px;
+    text-align: center;
+    color: $third-color;
+  }
+}
+
+.item {
+  &-heading {
+    @include font(700, 14px, 28px);
+    padding-bottom: 5px;
+    color: $third-color;
+  }
+
+  &-subtitle {
+    @include font(700, 12px, 20px);
+    padding-bottom: 5px;
+    color: $accent-color;
+  }
+
+  &-description {
+    @include font(500, 12px, 20px);
+    padding-bottom: 8px;
+    color: $secondary-color;
+  }
+}
