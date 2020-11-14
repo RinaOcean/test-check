@@ -1,0 +1,145 @@
+// .registartion .container {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+.registration {
+  background-color: #111518;
+  color: white;
+}
+
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.registration__description {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 280px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.registration__description-color {
+  color: #ff6b09;
+}
+
+.registration__link-lesson {
+  color: #ff6b09;
+}
+
+.registration__input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.registration__btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+// =====================================
+
+.form {
+  padding: 20px;
+  margin: 20px;
+  // width: 600px;
+}
+
+.form-field {
+  position: relative;
+  margin-top: 45px;
+}
+
+.form-label {
+  position: absolute;
+
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+
+  font-family: inherit;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.08em;
+
+  transition: transform 250ms linear;
+
+  color: white;
+}
+
+.form-input {
+  font-family: inherit;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.08em;
+
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  padding-left: 40px;
+  font-family: inherit;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border: 5px sold orange;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: white;
+  transform: translateY(-50px);
+}
+
+// .icon {
+//   position: absolute;
+//   top: 50%;
+//   left: 10px;
+
+//   transform: translateY(-50%);
+
+//   display: inline-block;
+//   width: 20px;
+//   height: 20px;
+//   background-color: tomato;
+// }
+
+// .form-input:focus ~ .icon {
+//   background-color: blue;
+// }
+
+.modal-svg-icon {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
+  fill: yellow;
+
+  /* .modal__input:focus + & {
+    fill: var(--accent-color);
+  } */
+}
+
+.registration-btn {
+  margin-top: 50px;
+}
