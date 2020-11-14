@@ -3,9 +3,8 @@
  * Все паршалы подключаются сюда.
  */
 
-
 @import './utils/variables';
-@import './base/global-reset';
+@import './base/basic-reset';
 @import './base/common';
 @import './base/container';
 @import './components/title';
@@ -14,10 +13,3 @@
 @import './components/offer';
 @import './layout/teacher';
 @import './layout/footer';
-
-
-
-
-
-
-
