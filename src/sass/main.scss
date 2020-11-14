@@ -7,4 +7,10 @@
 
 @import './utils/variables';
 @import './base/global-reset';
+@import './base/common';
+@import './base/container';
+
+@import './components/title';
+
 @import './layout/header';
+@import './layout/teacher';
