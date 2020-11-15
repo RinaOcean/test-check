@@ -1,0 +1,124 @@
+.section-program {
+  background-color: $bgn-dark-theme;
+  // background-image: url(../images/program/mobile/program-img-1x-mob.png);
+  // background-repeat: no-repeat;
+  // background-position: bottom right;
+
+  .title {
+    margin-bottom: 42px;
+    color: $third-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 52px;
+    }
+
+    @media screen and (min-width: 1199px) {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.list {
+  &-heading {
+    margin-left: 100px;
+
+    // @media screen and (max-width: 320px) {
+    //   margin-left: 100px;
+    // }
+
+    // @media screen and (min-width: 321px) and (max-width: 375px) {
+    //   margin-left: 120px;
+    // }
+
+    // @media screen and (min-width: 376px) and (max-width: 424px) {
+    //   margin-left: 140px;
+    // }
+
+    // @media screen and (min-width: 425px) and (max-width: 480px) {
+    //   margin-left: 180px;
+    // }
+
+    // @media screen and (min-width: 768px) and (max-width: 1365px) {
+    //   margin-left: 120px;
+    // }
+
+    @media screen and (min-width: 1366px) {
+      display: flex;
+    }
+  }
+
+  &-subtitle {
+    margin-top: 5px;
+
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1366px) {
+      margin-top: 25px;
+    }
+  }
+
+  &-description {
+    @media screen and (max-width: 767px) {
+      margin-top: 5px;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 176px;
+      margin-top: 5px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.item {
+  &-heading {
+    @include font(700, 14px, 28px);
+    letter-spacing: 0.08em;
+    color: $third-color;
+
+    @media screen and (min-width: 1366px) {
+      // flex-basis: calc(100% / 2 - 15px);
+      width: 240px;
+    }
+
+    &:not(:first-child) {
+      @media screen and (max-width: 767px) {
+        margin-top: 40px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1199 px) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &-subtitle {
+    @include font(700, 12px, 20px);
+    letter-spacing: 0.08em;
+    color: $accent-color;
+
+    &:not(:first-child) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  &-description {
+    @include font(500, 12px, 20px);
+    letter-spacing: 0.08em;
+    color: $secondary-color;
+    opacity: 0.5;
+  }
+}
