@@ -42,7 +42,7 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
-      margin-left: 120px;
+      margin-left: 60px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -63,30 +63,6 @@
         transform-origin: top left;
         transform: rotate(90deg);
       }
-
-      // @media screen and (min-width: 321px) and (max-width: 375px) {
-      //   top: 130px;
-      //   left: 110px;
-      //   width: 1158px;
-      //   transform-origin: top left;
-      //   transform: rotate(90deg);
-      // }
-
-      // @media screen and (min-width: 376px) and (max-width: 424px) {
-      //   top: 130px;
-      //   left: 130px;
-      //   width: 1158px;
-      //   transform-origin: top left;
-      //   transform: rotate(90deg);
-      // }
-
-      // @media screen and (min-width: 425px) and (max-width: 480px) {
-      //   top: 130px;
-      //   left: 160px;
-      //   width: 1158px;
-      //   transform-origin: top left;
-      //   transform: rotate(90deg);
-      // }
 
       @media screen and (min-width: 768px) and (max-width: 1365px) {
         top: 158px;
@@ -167,26 +143,9 @@
 
       @media screen and (max-width: 767px) {
         transform: translate(-8px, 40%);
-        // transform: translateX(-8px);
-        // transform: translateY(33%);
         transform-origin: center left;
         left: calc(42% - 40px);
       }
-
-      // @media screen and (min-width: 321px) and (max-width: 375px) {
-      //   transform: translateY(33%);
-      //   left: 102px;
-      // }
-
-      // @media screen and (min-width: 376px) and (max-width: 424px) {
-      //   transform: translateY(33%);
-      //   left: 122px;
-      // }
-
-      // @media screen and (min-width: 425px) and (max-width: 480px) {
-      //   transform: translateY(33%);
-      //   left: 152px;
-      // }
 
       @media screen and (min-width: 1366px) {
         top: 268px;
