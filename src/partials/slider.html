@@ -4,18 +4,20 @@
       <section class="slider-container">
         <article class="slider-item">
         <div class="slider-left">
-          <img
-            src="./images/feedback/slider-6.png"
-            alt="портрет девушки"
-            width="90"
-            height="90"
-          />
-          <img
+          <picture>
+       <source srcset="./images/slider/desktop/img1@1x.webp 1x, ./images/slider/desktop/img1@2x.webp 2x" media="(min-width:768px)" type="image/webp" />
+       <source srcset="./images/slider/desktop/img1@1x.jpg 1x, ./images/slider/desktop/img1@2x.jpg 2x" media="(min-width:768px)"/>
+        <source srcset="./images/slider/mobile/img-mob1@1x.webp 1x, ./images/slider/mobile/img-mob1@2x.webp 2x" media="(max-width:768px)" type="image/webp" />
+        <source srcset="./images/slider/mobile/img-mob1@1x.jpg 1x, ./images/slider/mobile/img-mob1@2x.jpg 2x" media="(max-width:768px)" />
+       <img src="./images/slider/desktop/img1@1x.jpg" alt="портрет девушки" class="slider-photo"/>
+
+          </picture>
+          <!-- <img
             src="./images/footer/instagram.jpg"
             width="30"
             height="30"
             alt="instsgram"
-          />
+          /> -->
           <!-- <svg class="slider-left-svg" width="30" height="30">
             <use href="./images/footer/instagram.svg"></use>
           </svg> -->
