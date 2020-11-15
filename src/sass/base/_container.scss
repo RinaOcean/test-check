@@ -3,6 +3,7 @@
 .container {
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 
   @media screen and (min-width: 320px) {
     max-width: 480px;
@@ -15,8 +16,8 @@
     padding-right: 40px;
   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1366px) {
+    max-width: 1314px;
     // padding-left: 183px;
     // padding-right: 183px;
     // пока закомментил надо принять решение по размерам
