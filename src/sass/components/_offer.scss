@@ -3,105 +3,55 @@
   padding-bottom: 49px;
   background-color: $bgn-light-theme;
 
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
   @media screen and (min-width: 1366px) {
+    width: 1366px;
     padding-top: 96px;
     padding-bottom: 130px;
   }
 }
 
-// внести изменения в общий контейнер в котором прописать параметры согласно тому как Катя описала в трелло
-.container-section {
-  min-width: 320px;
-  padding-left: 52px;
-  padding-right: 53px;
-
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
-    .container-section {
-      min-width: 768px;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-  }
-
-  @media screen and (min-width: 1366px) {
-    .container-section {
-      min-width: 1366px;
-      padding-left: 183px;
-      padding-right: 153px;
-    }
+@media screen and (min-width: 320px) {
+  .container-section {
+    min-width: 320px;
+    padding-left: 52px;
+    padding-right: 53px;
   }
 }
 
-.offer-list-item {
-  display: flex;
-  align-content: center;
-  width: 219px;
-  height: 60px;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
-    .offer-list-item {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .offer-list-item:not(:last-child) {
-      margin-right: 21px;
-      margin-bottom: 0px;
-    }
-  }
-
-  @media screen and (min-width: 1366px) {
-    .offer-list-item {
-      width: 420px;
-      height: 100px;
-    }
-    .offer-list-item:not(:last-child) {
-      margin-right: 28px;
-      margin-bottom: 0px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .container-section {
+    min-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
-.offer-icon {
-  display: block;
-  width: 59px;
-  height: 60px;
-  margin-right: 10px;
-
-  @media screen and (min-width: 1366px) {
-    .offer-icon {
-      display: flex;
-      width: 100px;
-      height: 102px;
-    }
+@media screen and (min-width: 1366px) {
+  .container-section {
+    padding-left: 183px;
+    padding-right: 153px;
   }
 }
 
-.offer-list-description {
-  display: flex;
-  align-items: stretch;
-  width: 146px;
-  height: 100%;
-  @include font(700, 14px, 20px);
-  letter-spacing: 0.08em;
-  color: $primary-color;
+@media screen and (min-width: 320px) {
+  .offer-list {
+    display: block;
+  }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .offer-list {
     display: flex;
     justify-content: space-between;
-  }
-
-  @media screen and (min-width: 1366px) {
-    .offer-list-description {
-      position: flex;
-      align-items: stretch;
-      width: 320px;
-      @include font(700, 20px, 33px);
-    }
   }
 }
 
@@ -111,3 +61,85 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 320px) {
+  .offer-list-item {
+    display: flex;
+    align-content: center;
+    width: 219px;
+    height: 60px;
+  }
+  .offer-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .offer-list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .offer-list-item {
+    width: 420px;
+    height: 100px;
+  }
+}
+
+.offer-list-item::before {
+  background-image: url(../images/offer/desktop-body.svg);
+}
+
+//     .offer-list-item:not(:last-child) {
+//       margin-right: 28px;
+//       margin-bottom: 0px;
+//     }
+//   }
+// }
+
+// .offer-icon {
+//   display: block;
+//   width: 59px;
+//   height: 60px;
+//   margin-right: 10px;
+
+//   @media screen and (min-width: 1366px) {
+//     .offer-icon {
+//       display: flex;
+//       width: 100px;
+//       height: 102px;
+//     }
+//   }
+// }
+
+// .offer-list-description {
+//   display: flex;
+//   align-items: stretch;
+//   width: 146px;
+//   height: 100%;
+//   @include font(700, 14px, 20px);
+//   letter-spacing: 0.08em;
+//   color: $primary-color;
+
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   @media screen and (min-width: 1366px) {
+//     .offer-list-description {
+//       position: flex;
+//       align-items: stretch;
+//       width: 320px;
+//       @include font(700, 20px, 33px);
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1366px) {
+//   .offer-list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
