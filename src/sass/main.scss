@@ -7,10 +7,13 @@
 @import './base/basic-reset';
 @import './base/common';
 @import './base/container';
-@import './components/title';
 
+@import './components/title';
+@import './components/guaranties';
 @import './layout/header';
 @import './components/offer';
 @import './layout/problems';
+@import './layout/program';
 @import './layout/teacher';
 @import './layout/footer';
+@import './layout/methods';
