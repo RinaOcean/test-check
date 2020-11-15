@@ -1,0 +1,1 @@
+{"version":3,"sources":["js-slider/script.js"],"names":["$","document","ready","slick"],"mappings":";AAAAA,EAAEC,UAAUC,MAAM,WAChBF,EAAE,qBAAqBG,MAAM","file":"script.c71fb116.js","sourceRoot":"..\\src","sourcesContent":["$(document).ready(function () {\r\n  $('.slider-container').slick({});\r\n});\r\n"]}
