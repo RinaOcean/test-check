@@ -19,6 +19,10 @@
   &-subtitle {
     margin-top: 5px;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+    }
+
     @media screen and (min-width: 1366px) {
       margin-top: 25px;
     }
@@ -31,6 +35,7 @@
     }
 
     @media screen and (min-width: 768px) {
+      width: 176px;
       margin-top: 5px;
     }
 
@@ -62,6 +67,12 @@
     @include font(700, 12px, 20px);
     letter-spacing: 0.08em;
     color: $accent-color;
+
+    &:not(:first-child) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 50px;
+      }
+    }
   }
 
   &-description {
