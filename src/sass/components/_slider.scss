@@ -2,7 +2,7 @@
   @media screen and (min-width: 1200px) {
     padding: 130px 0 130px 0;
   }
-  &-item-title {
+  &-title {
     color: $primary-color;
     letter-spacing: 0.08em;
     font-style: normal;
@@ -22,13 +22,16 @@
   }
 }
 
-.slider-container {
+.slider-item {
   @media screen and (max-width: 767px) {
     text-align: center;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
+}
 
+.slider-container {
   &-title {
     color: $accent-color;
     letter-spacing: 0.08em;
@@ -89,4 +92,15 @@
       @include font(500, 18px, 28px);
     }
   }
+}
+.slider-left {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 46px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+  }
+}
+.slider-left-svg {
+  display: block;
 }
