@@ -4,6 +4,18 @@
   // background-repeat: no-repeat;
   // background-position: bottom right;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 120px;
+  }
+
   .title {
     margin-bottom: 42px;
     color: $third-color;
