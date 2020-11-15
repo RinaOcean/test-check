@@ -1,4 +1,38 @@
+.section {
+  padding-top: 30px;
+  padding-bottom: 49.5px;
+  background-color: $bgn-light-theme;
+}
+
+.container {
+  min-width: 320px;
+  padding-left: 52px;
+  padding-right: 53.18px;
+}
+
+.offer-list-item {
+  display: flex;
+  align-content: center;
+  width: 219px;
+  height: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.offer-icon {
+  display: flex;
+  width: 58.82px;
+  height: 60px;
+  margin-right: 10px;
+}
+
 .offer-list-description {
-  @include font($fw: 700, $fs: 14px, $lh: 1.428);
+  display: flex;
+  align-items: stretch;
+  width: 146px;
+  @include font($fw: 700, $fs: 14px, $lh: 16px);
+  letter-spacing: 0.08em;
   color: $primary-color;
 }
