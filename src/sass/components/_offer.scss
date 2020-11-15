@@ -1,6 +1,112 @@
-.offer-list-description {
-  font-weight: 700px;
-  font-size: 14px;
-  line-height: 1.428;
-  color: #111518;
+.section {
+  padding-top: 30px;
+  padding-bottom: 49px;
+  background-color: $bgn-light-theme;
 }
+
+// внести изменения в общий контейнер в котором прописать параметры согласно тому как Катя описала в трелло
+.container {
+  min-width: 320px;
+  padding-left: 52px;
+  padding-right: 53px;
+}
+
+.offer-list-item {
+  display: flex;
+  align-content: center;
+  width: 219px;
+  height: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.offer-icon {
+  display: block;
+  width: 59px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.offer-list-description {
+  display: flex;
+  align-items: stretch;
+  width: 146px;
+  height: 100%;
+  @include font($fw: 700, $fs: 14px, $lh: 20px);
+  letter-spacing: 0.08em;
+  color: $primary-color;
+  &::before {
+    content: '';
+    background-image: url('../images/offer/mobile-body.svg');
+    width: 59px;
+    height: 60px;
+    margin-right: 10px;
+  }
+}
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .container {
+//     min-width: 768px;
+//     padding-left: 40px;
+//     padding-right: 40px;
+//   }
+
+//   .offer-list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   .offer-list-item:not(:last-child) {
+//     margin-right: 21px;
+//   }
+// }
+// @media screen and (min-width: 1366px) {
+//   .section {
+//     padding-top: 96px;
+//     padding-bottom: 130px;
+//   }
+
+//   .container {
+//     min-width: 1366px;
+//     padding-left: 183px;
+//     padding-right: 153px;
+//   }
+
+//   .offer-list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   .offer-list-item {
+//     display: flex;
+//     align-content: center;
+//     width: 420px;
+//     height: 100px;
+//   }
+
+//   .offer-list-item:not(:last-child) {
+//     margin-right: 28px;
+//     margin-bottom: 0px;
+//   }
+
+//   .offer-icon {
+//     display: flex;
+//     width: 100px;
+//     height: 102px;
+//   }
+//   // .firts-icon {
+//   //   background-image: url(./images/offer/desktop-body.svg);
+//   // }
+
+//   .offer-list-description {
+//     display: flex;
+//     align-items: stretch;
+//     width: 320px;
+//     height: 100%;
+//     @include font($fw: 700, $fs: 20px, $lh: 33px);
+//     letter-spacing: 0.08em;
+//     color: $primary-color;
+//   }
+// }

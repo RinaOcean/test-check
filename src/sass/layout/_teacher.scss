@@ -87,9 +87,8 @@
   width: 2em;
 }
 
-// булет-пойнты. перенести в спрайт
 .teacher-exp-item {
-  list-style-image: url(/sass/layout/tick-icon.svg);
+  // list-style-image: url(/sass/layout/tick-icon.svg);
   &:not(:last-child) {
     margin-bottom: 30px;
 
@@ -99,16 +98,15 @@
   }
 }
 
-// заменил на list-style-image строка 82
-// .teacher-exp-item::before {
-//   content: '';
-//   display: inline-block;
-//   background-image: url(/sass/layout/tick-icon.svg);
-
-//   margin-right: 9px;
-//   width: 18px;
-//   height: 14px;
-// }
+.teacher-exp-item::before {
+  content: '';
+  display: inline-flex;
+  background-image: url(../images/svg/tick-icon.svg);
+  margin-left: -27px;
+  margin-right: 9px;
+  width: 18px;
+  height: 14px;
+}
 
 .teacher-resume-list {
   margin-bottom: 10px;
