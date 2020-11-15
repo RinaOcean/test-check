@@ -28,3 +28,7 @@ body {
   text-decoration: none;
   display: block;
 }
+// сбрасывает CSS счётчик
+body {
+  counter-reset: item;
+}
