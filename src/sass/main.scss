@@ -3,12 +3,12 @@
  * Все паршалы подключаются сюда.
  */
 // BASE
+@import './utils/variables';
 @import './base/container';
 @import './base/basic-reset';
 @import './base/common';
 
 // COMMON
-@import './utils/variables';
 
 @import './components/scroll';
 @import './components/btn';
