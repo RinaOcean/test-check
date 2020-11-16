@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
@@ -12,6 +24,29 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- ссылка для анимации -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <!-- для скрола страници вверх -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+          } else {
+            $('.scrollup').fadeOut();
+          }
+        });
+
+        $('.scrollup').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
+    </script>
 
     <title>Test check project</title>
   </head>
@@ -19,20 +54,53 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
 
-       <include src="./partials/header.html"></include>
-    
-       
+
+    <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/offer.html"> </include>
+    <include src="./partials/problems.html"> </include>
     <include src="./partials/methods.html"></include>
     <include src="./partials/program.html"></include>
     <include src="./partials/teacher.html"></include>
     <include src="./partials/guaranties.html"></include>
     <include src="./partials/slider.html"></include>
+    <include src="./partials/registration.html"></include>
     <include src="./partials/footer.html"></include>
 
+    <!-- для скрола страници -->
+    <a href="#" class="scrollup">Наверх</a>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+
+    <!-- скрипт для анимации -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="./js-slider/script.js"></script> -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="./js-slider/script.js"></script>
   </body>
 </html>
