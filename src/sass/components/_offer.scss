@@ -67,8 +67,8 @@
   .offer-list-item {
     display: flex;
     align-content: center;
-    width: 100%;
-    height: 60px;
+    width: 216px;
+    height: 61px;
   }
   .offer-list-item:not(:last-child) {
     margin-bottom: 30px;
@@ -84,21 +84,19 @@
 
 @media screen and (min-width: 1366px) {
   .offer-list-item {
-    width: 420px;
-    height: 100px;
+    width: 423px;
+    height: 103px;
   }
 }
 
-// ! Прописать медиа для бефор (сверить планшет и мобилку)
-//! Уточнить вопрос можно ли бефор позиционировать через абсолют.
 // !У нас меняется толщина границы свг на мобилке
 
 .offer-list-item::before {
   content: '';
   margin-right: 10px;
   display: inline-block;
-  width: 59px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   background-image: url(../images/offer/mobile-body.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -114,7 +112,7 @@
 .offer-list-description {
   display: flex;
   align-items: stretch;
-  width: 146px;
+  width: 147px;
   height: 100%;
   @include font(700, 14px, 20px);
   letter-spacing: 0.08em;
