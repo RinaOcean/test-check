@@ -9,7 +9,7 @@
     @include font(800, 26px, 34px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     @include font(800, 46px, 60px);
   }
 }
