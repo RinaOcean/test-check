@@ -1,8 +1,10 @@
 .btn {
   font-family: $primary-font;
+
+  font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  color: #fff;
+  color: $primary-color;
   background-color: $accent-color;
   padding: 14px 10px 14px;
   text-align: center;
@@ -17,6 +19,39 @@
 
   &:hover {
     background-color: rgb(175, 112, 83);
+  }
+  &-header {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    color: $accent-color;
+    background-color: transparent;
+    border: 2px solid $accent-color; 
+    box-shadow: none;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-right: 40px;
+    }
+    // @media screen and (min-width: 1366px) {
+    //   margin-right: 90px;
+    // }
+    &-mobile {
+      color: $accent-color;
+      margin: 50px auto 0;
+      padding: 14px 10px;
+      background-color: transparent;
+      border: 2px solid $accent-color;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 }
 

@@ -1,14 +1,69 @@
-<header class="conteiner">
-    <div class="header">
-      <img src="./images/header/logo.png" alt="Логотип" class="logo">
+<header class="section header-section"> 
+  <div class="container header">
+
+    <img src="./images/header/logo.png" alt="Логотип" class="logo">
+
+    <div class="header-wrap">
+
       <div class="header-nav">
+  
         <ul class="header-list">
+          <li class="header-item"><a class="header-link" href="">О нас</a></li>
+          <li class="header-item"><a class="header-link" href="">Галерея</a></li>
+          <li class="header-item"><a class="header-link" href="">Клиенты</a></li>
+          <li class="header-item"><a class="header-link" href="">Контакты</a></li>
+        </ul>
+      </div>
+      
+      <div class="header-buttons">
+  
+        <button type="button" class="btn btn-header">Консультация по телефону</button>
+    
+        <button class="menu-btn" type="button" data-modal-open>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use href="./images/svg/sprite.svg#menu-burger"></use>
+          </svg>
+        </button>
+    </div>
+
+    </div>
+
+  </div>
+
+  <div class="backdrop is-hidden" data-modal>
+
+    <div class="header container">
+      <img src="./images/header/logo-white@2x.png" alt="Логотип" class="logo">
+
+      <button class="menu-btn-mobile" type="button" data-modal-close>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use href="./images/svg/sprite.svg#menu-cross"></use>
+        </svg>
+      </button>
+
+    </div>
+    <div>
+
+      <div class="header-nav-mobile container">
+
+        <ul class="header-list-mobile">
           <li class="header-item">О нас</li>
           <li class="header-item">Галерея</li>
           <li class="header-item">Клиенты</li>
           <li class="header-item">Контакты</li>
         </ul>
-        <button type="button" class="header-button">Подписаться</button>
+
       </div>
+
+      <button type="button" class="btn btn-header-mobile">Консультация по телефону</button>
+
     </div>
-  </header>
+
+
+  </div>
+</header>
+<!-- <button class="close-btn" type="button"  data-modal-close> 
+            <svg class="modal-close-svg">
+              <use href="./images/svg/sprite.svg#menu-cross"></use>
+            </svg>
+          </button> -->
