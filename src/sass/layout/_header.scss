@@ -35,7 +35,15 @@
         &:focus {
             color: $accent-color;
         }
-
+        &-mobile {
+            text-decoration: none;
+            color:$third-color;
+            transition: all 250ms $timing-function;
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            } 
+        }
     }
     &-list {
         display: none;
@@ -108,7 +116,7 @@
         width: 40px;
         height: 40px;
         border: 0;
-        fill: white;
+        fill: $third-color;
         background-color: transparent;
         @media screen and (min-width: 1366px) {
             display: none;
