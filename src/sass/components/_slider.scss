@@ -1,6 +1,9 @@
 .slider {
-  @media screen and (min-width: 1200px) {
-    padding: 130px 0 130px 0;
+  @media screen and (max-width: 767px) {
+    padding: 50px 0 50px 0;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 130px 112px 130px 112px;
   }
   &-title {
     color: $primary-color;
@@ -11,16 +14,26 @@
       @include font(800, 20px, 26px);
       margin-bottom: 20px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
       @include font(800, 26px, 34px);
       margin-bottom: 30px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1366px) {
       @include font(800, 46px, 60px);
       margin-bottom: 50px;
     }
   }
   &-item {
+    @media screen and (max-width: 767px) {
+      padding: 20px 20px 30px 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      padding: 40px 40px 40px 40px;
+    }
+    @media screen and (min-width: 1366px) {
+      padding: 50px 82px 50px 82px;
+    }
+
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
 }
@@ -35,20 +48,28 @@
 }
 
 .slider-container {
+  @media screen and (max-width: 767px) {
+    padding: 20px 20px 30px 20px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 0 83px 0 83px;
+  }
+
   &-title {
     color: $accent-color;
     letter-spacing: 0.08em;
     font-style: normal;
-    text-align: center;
+
     @media screen and (max-width: 767px) {
       @include font(800, 14px, 17px);
       margin-bottom: 20px;
+      text-align: center;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
       @include font(800, 20px, 24px);
       margin-bottom: 20px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1366px) {
       @include font(800, 30px, 37px);
       margin-bottom: 10px;
     }
@@ -61,24 +82,25 @@
       @include font(500, 12px, 15px);
       margin-bottom: 10px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
       @include font(500, 12px, 15px);
       margin-bottom: 20px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1366px) {
       @include font(500, 14px, 17px);
       margin-bottom: 20px;
+      margin-right: 250px;
     }
   }
   &-comment {
     color: #3d3d3d;
     letter-spacing: 0.08em;
     font-style: normal;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1365px) {
       @include font(500, 12px, 20px);
     }
-    @media screen and (min-width: 1200px) {
-      @include font(500, 18px, 28px);
+    @media screen and (min-width: 1366px) {
+      @include font(500, 16px, 24px);
     }
   }
   &-link {
@@ -88,25 +110,30 @@
     @media screen and (max-width: 767px) {
       display: block;
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1365px) {
       @include font(500, 12px, 20px);
     }
-    @media screen and (min-width: 1200px) {
-      @include font(500, 18px, 28px);
+    @media screen and (min-width: 1366px) {
+      @include font(500, 16px, 24px);
     }
   }
 }
+// .slider-right {
+//   margin: 0 20px 0 20px;
+// }
 .slider-left {
-  background-color: #ff6b09;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   @media screen and (max-width: 767px) {
-    display: flex;
     justify-content: center;
-    padding: 20px 0 20px 0;
+    // padding: 20px 0 20px 0;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
     margin-right: 46px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     margin-right: 40px;
   }
 }
@@ -116,6 +143,7 @@
 
 .slider-photo {
   border-radius: 50%;
+  margin-bottom: 20px;
   @media screen and (max-width: 767px) {
     max-width: 90px;
     height: 90px;
@@ -124,4 +152,63 @@
     max-width: 150px;
     height: 150px;
   }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  // color: #ff6b09;
+}
+
+.slider-insta {
+  width: 30px;
+  height: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+.slider-list {
+  display: flex;
+  flex-wrap: nowrap;
+
+  // justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    &-item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.slider-icon-photo {
+  width: 54px;
+  height: 54px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 28px;
+  line-height: 1;
+  opacity: 1;
+  color: transparent;
+  // background-image: url(../images/slider/arrowbefor.svg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-next:before {
+  content: '→';
+  background-image: url(../images/slider/arrowafter.svg);
+  background-size: 28px 15px;
+  background-repeat: no-repeat;
+}
+.slick-prev:before {
+  content: '→';
+  background-image: url(../images/slider/arrowbefor.svg);
+  background-size: 28px 15px;
+  background-repeat: no-repeat;
 }
