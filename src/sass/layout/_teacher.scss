@@ -6,7 +6,7 @@
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     margin-bottom: 50px;
   }
 }
@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   .teacher-wrapper-right {
     padding-left: 30px;
   }
@@ -30,7 +30,7 @@
 .teacher-photo {
   margin-bottom: 20px;
   max-width: 243px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     max-width: 530px;
   }
 }
@@ -43,7 +43,7 @@
 
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     @include font(800, 30px, 37px);
     margin-bottom: 45px;
   }
@@ -69,7 +69,7 @@
   @include font(600, 14px, 17px);
   letter-spacing: 0.06em;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     margin-bottom: 60px;
     @include font(600, 16px, 20px);
   }
@@ -115,7 +115,7 @@
   letter-spacing: 0.06em;
   color: $secondary-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     margin-bottom: 20px;
     @include font(500, 18px, 28px);
   }
@@ -136,7 +136,7 @@
   color: $accent-color;
   text-decoration-skip-ink: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
     @include font(500, 18px, 28px);
   }
 }
