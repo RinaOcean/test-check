@@ -29,6 +29,10 @@
       margin-bottom: 52px;
     }
 
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 140px;
+    }
+
     @media screen and (min-width: 1366px) {
       margin-bottom: 160px;
     }
@@ -41,11 +45,11 @@
       margin-left: calc(50% - 40px);
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
-      margin-left: 60px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: calc(30% - 80px);
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
     }
 
@@ -64,10 +68,10 @@
         transform: rotate(90deg);
       }
 
-      @media screen and (min-width: 768px) and (max-width: 1365px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
         top: 158px;
-        left: 100px;
-        width: 705px;
+        left: calc(24% - 80px);
+        width: 750px;
         transform-origin: top left;
         transform: rotate(90deg);
       }
@@ -118,8 +122,11 @@
     letter-spacing: 0.08em;
     color: $third-color;
 
+    // @media screen and (min-width: 768px) {
+    //   margin-left: 120px;
+    // }
+
     @media screen and (min-width: 1366px) {
-      // flex-basis: calc(100% / 2 - 15px);
       width: 240px;
     }
 
@@ -128,7 +135,7 @@
         margin-top: 40px;
       }
 
-      @media screen and (min-width: 768px) and (max-width: 1199 px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-top: 30px;
       }
     }
@@ -147,6 +154,12 @@
         left: calc(42% - 40px);
       }
 
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        transform: translate(-8px, 24%);
+        transform-origin: center left;
+        left: calc(24% - 80px);
+      }
+
       @media screen and (min-width: 1366px) {
         top: 268px;
       }
@@ -157,6 +170,10 @@
     @include font(700, 12px, 20px);
     letter-spacing: 0.08em;
     color: $accent-color;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 176px;
+    }
 
     &:not(:first-child) {
       @media screen and (min-width: 768px) and (max-width: 1199px) {
