@@ -1,31 +1,113 @@
+
+
 .header {
+
     display: flex;
-    width: 100%;
-    padding: 30px 10px;
-    &-nav {
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 1366px) {
         display: flex;
+        justify-content: left;
+    }
+
+    &-nav {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+        
+        &-mobile {
+            margin-top: 50px;
+        }
+    }
+    &-link {
+        text-decoration: none;
+        color:$secondary-color;
+        &::hover,
+        &::focus {
+            color: $accent-color;
+        }
+
     }
     &-list {
-        display: flex;
+        display: none;
         padding: 10px 20px;
         list-style: none;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.5;
-    }
-    &-item {
-        &:not(:last-child) {
-            margin-right: 10px;
+
+        @media screen and (min-width: 1366px) {
+            display: flex;
+            margin-right: 60px;
+            margin-left: 145px;
+            line-height: 1.214;
+            text-transform: uppercase;
+            
+        }
+
+        &-mobile {
+            text-align: left;
+            list-style: none;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 1.8;
+            letter-spacing: 0.03em;
+            color: $third-color;
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+                text-align: center;
+                font-size: 26px;
+                line-height: 1.808;
+            }
         }
     }
-    &-button {
-        padding: 10px;
-        background-color: blue;
-        color: white;
+    &-item {
+        
+        
+        @media screen and (min-width: 1366px) {
+            
+        }
+        &:not(:last-child) {
+            @media screen and (min-width: 1366px) {
+                margin-right: 40px;
+            }
+        }
+        
     }
+   
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+   &-buttons {
+        display: flex;
+   }
 }
 
 .logo {
+    display: inline-block;
     width: 128px;
     height: 45px;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+    &-mobile {
+        width: 40px;
+        height: 40px;
+        border: 0;
+        fill: white;
+        background-color: transparent;
+        @media screen and (min-width: 1366px) {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 1366px) {
+        display: none;
+    }
 }
