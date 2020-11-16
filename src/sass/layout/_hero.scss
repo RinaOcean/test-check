@@ -49,18 +49,18 @@
 
   @media screen and (min-width: 320px) {
     height: 618px;
-    padding: 110px 0 47px 0;
+    padding: 110px 20px 47px 20px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     height: 556px;
-    padding: 158px 0 65px 0;
+    padding: 158px 40px 65px 40px;
   }
 
   @media screen and (min-width: 1366px) {
     height: 878px;
-    padding: 228px 0 10px 0;
+    padding: 228px 26px 10px 26px;
   }
 }
 
@@ -111,8 +111,8 @@
   }
 
   @media screen and (min-width: 1366px) {
-    @include font(500, 20px, 33px);
-    width: 536px;
+    @include font(700, 20px, 33px);
+    width: 550px;
   }
 }
 
@@ -121,22 +121,16 @@
   @include font(700, 14px, 22px);
   letter-spacing: 0.08em;
   color: $accent-color;
+
+  @media screen and (min-width: 1366px) {
+    @include font(700, 20px, 33px);
+  }
 }
 
-.hero-button {
-  display: flex;
-  width: 260px;
-  height: 48px;
-  margin: 0px auto 30px auto;
-  @include font(700, 12px, 15px);
-  letter-spacing: 0.08em;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  color: $third-color;
-  background-color: $accent-color;
-  border: none;
-  cursor: pointer;
+.button-registration {
+  @media screen and (min-width: 320px) {
+    margin: 0px auto 30px auto;
+  }
 
   @media screen and (min-width: 768px) {
     margin: 0px auto 0px 0px;
@@ -158,16 +152,16 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 171px;
-    right: -22px;
+    top: 165px;
+    left: 370px;
     width: 375px;
     height: 320px;
   }
 
   @media screen and (min-width: 1366px) {
     top: 150px;
-    right: -116px;
+    left: 660px;
     width: 841px;
-    height: 718px;
+    height: 730px;
   }
 }

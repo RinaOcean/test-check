@@ -1,14 +1,94 @@
-<header class="conteiner">
-    <div class="header">
-      <img src="./images/header/logo.png" alt="Логотип" class="logo">
+<header class="section header-section"> 
+  <div class="container header">
+     <!-- <picture>
+      <source srcset="./images/team/team-1/team-1-desktop.webp 1x,
+        ./images/team/team-1/team-1-desktop.webp 2x" media="(min-width:1200px)" type="image/webp">
+
+      <source srcset="./images/team/team-1/team-1-desktop.jpg 1x,
+        ./images/team/team-1/team-1-desktop@2x.jpg 2x" media="(min-width:1200px)"> -->
+
+        <!-- ============================================= -->
+      <!-- <source srcset="./images/team/team-1/team-1-tablet.webp 1x,
+        ./images/team/team-1/team-1-tablet@2x.webp 2x" media="(min-width:768px)"
+        type="image/webp">
+
+      <source srcset="./images/team/team-1/team-1-tablet.jpg 1x,
+        ./images/team/team-1/team-1-tablet@2x.jpg 2x" media="(min-width:768px)"> -->
+
+       <!-- ============================================= -->
+      <!-- <source srcset="./images/team/team-1/team-1-mobile.webp 1x,
+        ./images/team/team-1/team-1-mobile@2x.webp 2x" media="(max-width:767px)"
+        type="image/webp">
+
+      <source srcset="./images/team/team-1/team-1-mobile.jpg 1x,
+        ./images/team/team-1/team-1-mobile@2x.jpg 2x" media="(max-width:767px)">
+
+      <img src="./images/team/team-1/team-1-mobile.jpg" />
+    </picture> -->
+    
+    <img src="./images/header/logo.png" alt="Логотип" class="logo">
+
+    <div class="header-wrap">
+
       <div class="header-nav">
+  
         <ul class="header-list">
-          <li class="header-item">О нас</li>
-          <li class="header-item">Галерея</li>
-          <li class="header-item">Клиенты</li>
-          <li class="header-item">Контакты</li>
+          <li class="header-item"><a class="header-link" href="">Программы обучения</a></li>
+          <li class="header-item"><a class="header-link" href="">О нас</a></li>
+          <li class="header-item"><a class="header-link" href="">Варианты обучения</a></li>
+          <li class="header-item"><a class="header-link" href="">Контакты</a></li>
         </ul>
-        <button type="button" class="header-button">Подписаться</button>
       </div>
+      
+      <div class="header-buttons">
+  
+        <button type="button" class="btn btn-header">Консультация по телефону</button>
+    
+        <button class="menu-btn" type="button" data-modal-open>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use href="./images/svg/sprite.svg#menu-burger"></use>
+          </svg>
+        </button>
     </div>
-  </header>
+
+    </div>
+
+  </div>
+
+  <div class="backdrop is-hidden" data-modal>
+
+    <div class="header container">
+      <img src="./images/header/logo-white@2x.png" alt="Логотип" class="logo">
+
+      <button class="menu-btn-mobile" type="button" data-modal-close>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use href="./images/svg/sprite.svg#menu-cross"></use>
+        </svg>
+      </button>
+
+    </div>
+    <div>
+
+      <div class="header-nav-mobile container">
+
+        <ul class="header-list-mobile">
+          <li class="header-item"><a class="header-link" href="">Программы обучения</a></li>
+          <li class="header-item"><a class="header-link" href="">О нас</a></li>
+          <li class="header-item"><a class="header-link" href="">Варианты обучения</a></li>
+          <li class="header-item"><a class="header-link" href="">Контакты</a></li>
+        </ul>
+
+      </div>
+
+      <button type="button" class="btn btn-header-mobile">Консультация по телефону</button>
+
+    </div>
+
+
+  </div>
+</header>
+<!-- <button class="close-btn" type="button"  data-modal-close> 
+            <svg class="modal-close-svg">
+              <use href="./images/svg/sprite.svg#menu-cross"></use>
+            </svg>
+          </button> -->
