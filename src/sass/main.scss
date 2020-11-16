@@ -2,11 +2,13 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
-@import './utils/variables';
+// BASE
+@import './base/container';
 @import './base/basic-reset';
 @import './base/common';
-@import './base/container';
+
+// COMMON
+@import './utils/variables';
 
 @import './components/scroll';
 @import './components/btn';
