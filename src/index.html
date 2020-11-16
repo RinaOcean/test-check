@@ -12,13 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
+    <!-- ссылка для анимации -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <title>Test check project</title>
   </head>
 
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-       <include src="./partials/header.html"></include>
+    <include src="./partials/header.html"></include>
     <include src="./partials/offer.html"> </include>
     <include src="./partials/methods.html"></include>
     <include src="./partials/program.html"></include>
@@ -27,8 +31,12 @@
     <include src="./partials/slider.html"></include>
     <include src="./partials/footer.html"></include>
 
-
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <!-- скрипт для анимации -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
   </body>
 </html>
