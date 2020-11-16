@@ -55,10 +55,10 @@
     margin: 0 auto;
     padding: 30px 0 15px 0;
 
-    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1)
-      /*,
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    /*,
     width 750ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 750ms cubic-bezier(0.4, 0, 0.2, 1)*/;
+    height 750ms cubic-bezier(0.4, 0, 0.2, 1)*/
 
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
@@ -156,11 +156,11 @@
       margin-bottom: 5px;
       padding: 0 17px;
 
-      transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1)
-        /*,
+      transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+      /*,
         font-size 750ms cubic-bezier(0.4, 0, 0.2, 1),
         line-height 750ms cubic-bezier(0.4, 0, 0.2, 1),
-        padding 750ms cubic-bezier(0.4, 0, 0.2, 1)*/;
+        padding 750ms cubic-bezier(0.4, 0, 0.2, 1)*/
 
       @media screen and (min-width: 767px) {
         padding: 0 41px;
@@ -191,11 +191,11 @@
       color: $secondary-color;
       padding: 0 6px;
 
-      transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1)
-        /*,
+      transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+      /*,
         font-size 750ms cubic-bezier(0.4, 0, 0.2, 1),
         line-height 750ms cubic-bezier(0.4, 0, 0.2, 1),
-        padding 750ms cubic-bezier(0.4, 0, 0.2, 1)*/;
+        padding 750ms cubic-bezier(0.4, 0, 0.2, 1)*/
 
       @media screen and (min-width: 767px) {
         padding: 0 21px;
