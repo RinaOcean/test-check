@@ -100,12 +100,36 @@
 
     @media screen and (min-width: 1200px) {
       @include font(600, 20px, 24px);
+
+      transition: border 250ms $timing-function;
     }
 
     &:focus {
       outline: none;
       border-color: $accent-color;
     }
+
+    // =============== Add placeholders and check validation==========
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    &:focus::placeholder {
+      opacity: 1;
+      color: rgb(179, 178, 178);
+      transition: opacity 750ms $timing-function;
+    }
+
+    &:required:focus:invalid:not(:placeholder-shown) {
+      border: 1px solid red;
+    }
+
+    &:required:focus:valid:not(:placeholder-shown) {
+      border: 1px solid green;
+    }
+
+    // =============== END Add placeholders and check validation==========
   }
 
   &__btn-wrapper {
@@ -173,27 +197,6 @@
   }
   // END desktop
 }
-
-// =============== Add placeholders ==========
-
-.registration-form-input::placeholder {
-  opacity: 0;
-}
-
-.registration-form-input:focus::placeholder {
-  opacity: 1;
-  color: rgb(179, 178, 178);
-}
-
-.registration-form-input:required:focus:invalid:not(:placeholder-shown) {
-  border: 1px solid red;
-}
-
-.registration-form-input:required:focus:valid:not(:placeholder-shown) {
-  border: 1px solid teal;
-}
-
-// =============== END Add placeholders ==========
 
 .registration-form-input:focus + .registration-form-lable,
 .registration-form-input:not(:placeholder-shown) + .registration-form-lable {
