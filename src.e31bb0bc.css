@@ -313,7 +313,8 @@ body {
   background-image: url("/fire-icon.e8fc57fe.svg");
   width: 14px;
   height: 20px;
-  display: block;
+  display: inline-block;
+  content: icon "scale (1.25)";
 }
 @media screen and (min-width: 768px) {
   .guaranties-item::before {
@@ -328,6 +329,21 @@ body {
   }
 }
 
+.guaranties-item::before {
+  animation: animate125 3000ms infinite 1000ms;
+}
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .header-section {
   position: relative;
 }
