@@ -212,3 +212,13 @@
   background-size: 28px 15px;
   background-repeat: no-repeat;
 }
+
+.slider-icon {
+  margin: 0 auto;
+  max-width: 712px;
+}
+@media screen and (min-width: 768px) {
+  .slider-container .slick-next:before {
+    display: non;
+  }
+}
