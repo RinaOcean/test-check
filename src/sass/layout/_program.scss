@@ -70,7 +70,7 @@
       }
 
       @media screen and (min-width: 1366px) {
-        top: 276px;
+        top: 156px;
         left: 0;
         width: 100%;
       }
@@ -116,7 +116,7 @@
     color: $third-color;
 
     @media screen and (min-width: 1366px) {
-      flex-basis: calc(100% / 5 - 40px);
+      flex-basis: calc(100% / 5 - 52px);
     }
 
     &:not(:first-child) {
@@ -154,7 +154,7 @@
       }
 
       @media screen and (min-width: 1366px) {
-        top: 268px;
+        top: 148px;
       }
     }
   }
