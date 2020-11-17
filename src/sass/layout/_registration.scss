@@ -138,14 +138,19 @@
     margin-top: 50px;
   }
 
-  & .btn {
-    padding-top: 17px;
-    @include font(700, 12px, 15px);
-    letter-spacing: 0.08em;
-    @media screen and (min-width: 1200px) {
-      @include font(700, 14px, 17px);
-    }
+  & .button-registration {
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  // & .btn {
+  //   padding-top: 17px;
+  //   @include font(700, 12px, 15px);
+  //   letter-spacing: 0.08em;
+  //   @media screen and (min-width: 1200px) {
+  //     @include font(700, 14px, 17px);
+  //   }
+  // }
 
   // mobile
   @media screen and (max-width: 767px) {
