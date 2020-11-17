@@ -64,7 +64,7 @@
       @media screen and (min-width: 768px) and (max-width: 1365px) {
         top: 10px;
         left: calc(15% - 136px);
-        width: 750px;
+        width: 740px;
         transform-origin: top left;
         transform: rotate(90deg);
       }
@@ -115,12 +115,8 @@
     letter-spacing: 0.08em;
     color: $third-color;
 
-    // @media screen and (min-width: 768px) {
-    //   margin-left: 120px;
-    // }
-
     @media screen and (min-width: 1366px) {
-      width: 240px;
+      flex-basis: calc(100% / 5 - 40px);
     }
 
     &:not(:first-child) {
@@ -128,8 +124,12 @@
         margin-top: 40px;
       }
 
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
+      @media screen and (min-width: 768px) and (max-width: 1365px) {
         margin-top: 30px;
+      }
+
+      @media screen and (min-width: 1366px) {
+        margin-left: 30px;
       }
     }
 
@@ -166,7 +166,7 @@
     color: $accent-color;
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
-      width: 176px;
+      flex-basis: calc(100% / 3 - 40px);
     }
 
     &:not(:first-child) {
@@ -192,6 +192,14 @@
     letter-spacing: 0.08em;
     color: $secondary-color;
     opacity: 0.5;
+
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      width: 176px;
+    }
+
+    @media screen and (min-width: 1365px) {
+      width: 240px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 8px;
