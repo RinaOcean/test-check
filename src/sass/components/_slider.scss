@@ -3,7 +3,7 @@
     padding: 50px 0 50px 0;
   }
   @media screen and (min-width: 1366px) {
-    padding: 130px 112px 130px 112px;
+    // padding: 130px 112px 130px 112px;
   }
   &-title {
     color: $primary-color;
@@ -25,13 +25,13 @@
   }
   &-item {
     @media screen and (max-width: 767px) {
-      padding: 20px 20px 30px 20px;
+      // padding: 20px 20px 30px 20px;
     }
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       padding: 40px 40px 40px 40px;
     }
     @media screen and (min-width: 1366px) {
-      padding: 50px 82px 50px 82px;
+      padding: 50px 0px 50px 0px;
     }
 
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -48,11 +48,14 @@
 }
 
 .slider-container {
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   @media screen and (max-width: 767px) {
     padding: 20px 20px 30px 20px;
   }
   @media screen and (min-width: 1366px) {
-    padding: 0 83px 0 83px;
+    margin: 0 auto;
+    max-width: 1090px;
+    padding: 0 112px 0 112px;
   }
 
   &-title {
@@ -97,7 +100,7 @@
     letter-spacing: 0.08em;
     font-style: normal;
     @media screen and (max-width: 1365px) {
-      @include font(500, 12px, 20px);
+      @include font(500, 10px, 20px);
     }
     @media screen and (min-width: 1366px) {
       @include font(500, 16px, 24px);
@@ -167,9 +170,9 @@
   }
 }
 .slider-list {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: end;
+  // display: flex;
+  // flex-wrap: nowrap;
+  // justify-content: end;
   // justify-content: center;
 
   @media screen and (max-width: 767px) {
@@ -182,6 +185,9 @@
       margin-right: 30px;
     }
   }
+}
+.slick-track {
+  width: 560px;
 }
 
 .slider-icon-photo {
@@ -214,6 +220,48 @@
 }
 
 .slider-icon {
-  margin: 0 auto;
-  max-width: 712px;
+  // margin: 0 auto;
+  // max-width: 712px;
+}
+.slider-icon {
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    margin-top: 30px;
+    margin-left: 65px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-top: 40px;
+    margin-left: 340px;
+  }
+}
+.slider-list-item {
+  width: 54px;
+}
+
+.slider-list {
+  @media screen and (max-width: 767px) {
+    margin: 0 46px 0 46px;
+  }
+}
+
+.slider-right {
+  max-width: 706px;
+}
+@media screen and (min-width: 1366px) {
+  .slick-prev {
+    left: -100px;
+  }
+  [dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+  }
+  .slick-next {
+    right: -100px;
+  }
+  [dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+  }
 }
