@@ -169,7 +169,7 @@
 .slider-list {
   display: flex;
   flex-wrap: nowrap;
-
+  justify-content: end;
   // justify-content: center;
 
   @media screen and (max-width: 767px) {
