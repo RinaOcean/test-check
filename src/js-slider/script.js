@@ -35,24 +35,25 @@ $(document).ready(function () {
     infinite: false,
     speed: 300,
     focusOnSelect: true,
-    // slidesToShow: 4,
-    // slidesToScroll: 4,
+    slidesToShow: 7,
+    slidesToScroll: 7,
     // centerMode: true,
     asNavFor: '.slider-container',
     responsive: [
-      {
-        breakpoint: 1366,
-        settings: {
-          slidesToShow: 7,
-          slidesToScroll: 1,
-        },
-      },
+      // {
+      //   breakpoint: 1200,
+      //   settings: {
+      //     slidesToShow: 7,
+      //     slidesToScroll: 1,
+      //   },
+      // },
 
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          centerMode: true,
         },
       },
       // You can unslick at a given breakpoint now by adding:
