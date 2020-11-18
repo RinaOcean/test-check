@@ -171,7 +171,6 @@
 }
 
 .slider-list {
-
   // display: flex;
   // flex-wrap: nowrap;
   // justify-content: end;
@@ -181,7 +180,6 @@
   flex-wrap: nowrap;
 
   justify-content: center;
-
 
   @media screen and (max-width: 767px) {
     &-item:not(:last-child) {
@@ -197,7 +195,7 @@
 
 // .slick-track {
 //   width: 560px;
-=======
+
 // .slider-list li {
 //   width: 54px !important;
 // }
@@ -236,7 +234,6 @@
   background-size: 28px 15px;
   background-repeat: no-repeat;
 }
-
 
 .slider-icon {
   // margin: 0 auto;
@@ -323,4 +320,3 @@
 //   right: -25px;
 //   left: auto;
 // }
-
