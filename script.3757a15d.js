@@ -118,7 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js-slider/script.js":[function(require,module,exports) {
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 $(document).ready(function () {
+  var _$$slick;
+
   $('.slider-container').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -126,16 +130,32 @@ $(document).ready(function () {
     // slidesToScroll: 1,
     // arrows: false,
     fade: true,
-    asNavFor: '.slider-list'
+    asNavFor: '.slider-list',
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        arrows: false
+      }
+    }]
   });
-  $('.slider-list').slick({
+  $('.slider-list').slick((_$$slick = {
+    infinite: false,
+    speed: 300,
+    focusOnSelect: true,
     slidesToShow: 7,
-    slidesToScroll: 1,
+    slidesToScroll: 7,
     asNavFor: '.slider-container',
-    // infinite: true,
-    centerMode: true,
-    focusOnSelect: true
-  }); // $('.slider-list').slick({
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    } // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  }, _defineProperty(_$$slick, "slidesToShow", 7), _defineProperty(_$$slick, "slidesToScroll", 1), _defineProperty(_$$slick, "asNavFor", '.slider-container'), _defineProperty(_$$slick, "centerMode", true), _defineProperty(_$$slick, "focusOnSelect", true), _$$slick)); // $('.slider-list').slick({
   //   dots: true,
   //   infinite: false,
   //   speed: 300,
@@ -199,7 +219,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62723" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52344" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
