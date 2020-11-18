@@ -32,16 +32,18 @@
       <div class="header-nav">
   
         <ul class="header-list">
-          <li class="header-item"><a class="header-link" href="">Программы обучения</a></li>
-          <li class="header-item"><a class="header-link" href="">О нас</a></li>
-          <li class="header-item"><a class="header-link" href="">Варианты обучения</a></li>
-          <li class="header-item"><a class="header-link" href="">Контакты</a></li>
+          <li class="header-item"><a class="header-link" href="#program-study">Программы обучения</a></li>
+          <li class="header-item"><a class="header-link" href="#about-us">О нас</a></li>
+          <li class="header-item"><a class="header-link" href="#var-study">Варианты обучения</a></li>
+          <li class="header-item"><a class="header-link" href="#contact">Контакты</a></li>
         </ul>
       </div>
       
       <div class="header-buttons">
   
-        <button type="button" class="btn btn-header">Консультация по  телефону</button>
+        <a href="#registration" class="link">
+          <button type="button" class="btn btn-header">Консультация по  телефону</button>
+        </a>
     
         <button class="menu-btn" type="button" data-modal-open>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -57,7 +59,26 @@
   <div class="backdrop is-hidden" data-modal>
 
     <div class="header container">
-      <img src="./images/header/tablet/logo-menu-1x-tab.png" alt="Логотип" class="logo">
+      <picture>
+        
+        <source srcset="./images/header/tablet/logo-menu-1x-tab.webp 1x,
+          ./images/header/tablet/logo-menu-2x-tab.webp 2x" media="(min-width:768px)"
+          type="image/webp">
+  
+        <source srcset="./images/header/tablet/logo-menu-1x-tab.png 1x,
+          ./images/header/tablet/logo-menu-2x-tab.png 2x" media="(min-width:768px)">
+  
+         <!-- ============================================= -->
+        <source srcset="./images/header/mobile/logo-menu-1x-mob.webp 1x,
+          ./images/header/mobile/logo-menu-2x-mob.webp 2x" media="(max-width:767px)"
+          type="image/webp">
+  
+        <source srcset="./images/header/mobile/logo-menu-1x-mob.png 1x,
+          ./images/header/mobile/logo-menu-2x-mob.png 2x" media="(max-width:767px)">
+  
+        <img src="./images/header/mobile/logo-menu-1x-mob.png" alt="Логотип" class="logo">
+      </picture>
+
 
       <button class="menu-btn-mobile" type="button" data-modal-close>
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -71,15 +92,17 @@
       <div class="header-nav-mobile container">
 
         <ul class="header-list-mobile">
-          <li class="header-item"><a class="header-link-mobile" href="">Программы обучения</a></li>
-          <li class="header-item"><a class="header-link-mobile" href="">О нас</a></li>
-          <li class="header-item"><a class="header-link-mobile" href="">Варианты обучения</a></li>
-          <li class="header-item"><a class="header-link-mobile" href="">Контакты</a></li>
+          <li class="header-item"><a class="header-link-mobile" href="#program-study">Программы обучения</a></li>
+          <li class="header-item"><a class="header-link-mobile" href="#about-us">О нас</a></li>
+          <li class="header-item"><a class="header-link-mobile" href="#var-study">Варианты обучения</a></li>
+          <li class="header-item"><a class="header-link-mobile" href="#contact">Контакты</a></li>
         </ul>
 
       </div>
 
-      <button type="button" class="btn btn-header-mobile">Консультация по телефону</button>
+      <a href="#registration" class="link">
+        <button type="button" class="btn btn-header-mobile">Консультация по телефону</button>
+      </a>
 
     </div>
 
