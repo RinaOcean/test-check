@@ -20,8 +20,7 @@
     letter-spacing: 0.03em;
 
     color: #111518;
-    @media screen and (max-width: 480px) {
-      width: 280px;
+    @media screen and (max-width: 767px) {
       height: 31px;
       font-size: 26px;
       margin-bottom: 30px;
@@ -56,15 +55,15 @@
     font-style: normal;
     font-weight: 500;
     color: #3d3d3d;
-    /*padding-left: 41px;*/
 
+    padding-left: 24px;
     &:not(:last-child) {
-      padding-bottom: 20px;
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 1366px) {
         padding-bottom: 23px;
       }
     }
-    @media screen and (max-width: 480px) {
+
+    @media screen and (max-width: 767px) {
       padding-left: 26px;
       font-size: 12px;
       line-height: 1.666;
@@ -104,7 +103,7 @@
   }
 }
 .guaranties-item::before {
-  animation: animate125 3000ms infinite 1000ms;
+  animation: animate125 3000ms 10 1000ms;
 }
 @keyframes animate125 {
   0% {
