@@ -104,6 +104,8 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/*hello*/
 .offer-list-item:nth-child(2)::before {
   content: '';
   background-image: url(../images/offer/mobile-hat.svg);
